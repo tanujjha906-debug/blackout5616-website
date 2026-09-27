@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111111">
+<meta name="description" content="Blackout5616 — official business website. Products, services, contact details and location.">
+<title>BLACKOUT5616 | Official Website</title>
+<style>
+:root{--bg:#0a0a0a;--card:#141414;--text:#f7f7f7;--muted:#aaa;--line:#292929;--accent:#fff;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:900;letter-spacing:.12em}.navlinks{display:flex;gap:24px;color:#ccc;font-size:14px}.navlinks a:hover{color:#fff}
+.menu{display:none;background:none;border:1px solid var(--line);color:#fff;padding:8px 10px;border-radius:10px}
+.hero{min-height:78vh;display:grid;place-items:center;padding:80px 0;background:radial-gradient(circle at 50% 15%,#292929 0,#111 30%,#0a0a0a 68%)}
+.hero-inner{text-align:center;max-width:900px}.eyebrow{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#aaa}.hero h1{font-size:clamp(46px,10vw,110px);line-height:.95;margin:18px 0;font-weight:950;letter-spacing:-.06em}.hero p{max-width:680px;margin:0 auto 30px;color:#c4c4c4;font-size:18px}
+.btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;border:1px solid #fff;font-weight:700}.btn.primary{background:#fff;color:#000}.btn.secondary{border-color:#444;color:#ddd}
+section{padding:90px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px}.section-head h2{font-size:clamp(30px,5vw,52px);margin:0;letter-spacing:-.04em}.section-head p{max-width:520px;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;min-height:210px}.card h3{margin:8px 0 10px;font-size:22px}.card p{color:#aaa;margin:0}.num{font-size:12px;color:#777;letter-spacing:.12em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.aboutbox{border:1px solid var(--line);border-radius:28px;padding:40px;background:linear-gradient(145deg,#171717,#0d0d0d)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{border-top:1px solid var(--line);padding-top:15px}.stat b{font-size:24px;display:block}.stat span{color:#888;font-size:13px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{border:1px solid var(--line);border-radius:24px;padding:28px;background:#111}.contact-row{display:flex;gap:15px;padding:16px 0;border-bottom:1px solid var(--line)}.contact-row:last-child{border:0}.icon{width:34px;height:34px;border-radius:10px;background:#222;display:grid;place-items:center;flex:none}.label{font-size:12px;color:#777;text-transform:uppercase;letter-spacing:.08em}.value{font-weight:700;word-break:break-word}
+form{display:grid;gap:13px}input,textarea{width:100%;border:1px solid #303030;background:#0b0b0b;color:#fff;padding:14px 15px;border-radius:13px;font:inherit}textarea{min-height:130px;resize:vertical}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#777;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.notice{padding:14px 16px;border:1px dashed #444;border-radius:14px;color:#aaa;font-size:13px;margin-top:20px}
+@media(max-width:760px){.navlinks{display:none}.menu{display:block}.navlinks.open{display:flex;position:absolute;top:72px;left:0;right:0;background:#0b0b0b;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.grid,.about,.contact{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:12px}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" id="brandName">BLACKOUT5616</a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" onclick="document.getElementById('navlinks').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Official Business Website</div>
+    <h1 id="heroName">BLACKOUT5616</h1>
+    <p id="tagline">Your trusted local business. Discover our products, services and easy ways to connect with us.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Contact Us</a>
+      <a class="btn secondary" id="instagramBtn" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+  <div>
+    <div class="eyebrow">About the business</div>
+    <h2>Built around your customers.</h2>
+    <p style="color:#aaa;font-size:18px" id="aboutText">We focus on quality, service and a simple customer experience. Replace this text with the business owner's exact story, specialties and USP.</p>
+    <div class="stats">
+      <div class="stat"><b>01</b><span>Quality first</span></div>
+      <div class="stat"><b>02</b><span>Customer focused</span></div>
+      <div class="stat"><b>03</b><span>Easy contact</span></div>
+    </div>
+  </div>
+  <div class="aboutbox">
+    <div class="eyebrow">Business information</div>
+    <h3 id="businessType">Business / Store</h3>
+    <p id="businessArea" style="color:#aaa">Address will appear here after the owner confirms the exact location.</p>
+    <a class="btn secondary" href="#contact" style="margin-top:15px">Get directions & contact</a>
+  </div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">What we offer</div><h2>Products & Services</h2></div><p>Add the actual products/services from the Instagram profile here. The cards below are ready to edit.</p></div>
+  <div class="grid">
+    <article class="card"><span class="num">01</span><h3>Featured Product</h3><p>Describe the main product or service offered by the business.</p></article>
+    <article class="card"><span class="num">02</span><h3>Premium Collection</h3><p>Highlight a popular collection, category or customer favourite.</p></article>
+    <article class="card"><span class="num">03</span><h3>Custom / Special Service</h3><p>Add any special service, custom order or unique offering.</p></article>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+  <div class="section-head"><div><div class="eyebrow">Get in touch</div><h2>Contact & Location</h2></div><p>Use the verified owner details here. Nothing is invented by this template.</p></div>
+  <div class="contact">
+    <div class="contact-card">
+      <div class="contact-row"><div class="icon">📍</div><div><div class="label">Address</div><div class="value" id="address">ADD VERIFIED BUSINESS ADDRESS</div></div></div>
+      <div class="contact-row"><div class="icon">☎</div><div><div class="label">Phone</div><div class="value"><a id="phoneLink" href="#">ADD VERIFIED PHONE NUMBER</a></div></div></div>
+      <div class="contact-row"><div class="icon">✉</div><div><div class="label">Email</div><div class="value"><a id="emailLink" href="#">ADD VERIFIED EMAIL</a></div></div></div>
+      <div class="contact-row"><div class="icon">◎</div><div><div class="label">Instagram</div><div class="value"><a id="instagramText" target="_blank" rel="noopener">@blackout5616</a></div></div></div>
+      <div class="notice">For a real live business site, replace the three “ADD VERIFIED…” fields with details supplied by the business owner.</div>
+    </div>
+    <div class="contact-card">
+      <h3 style="margin-top:0">Send an enquiry</h3>
+      <form onsubmit="sendEnquiry(event)">
+        <input id="name" required placeholder="Your name">
+        <input id="contactInput" required placeholder="Phone or email">
+        <textarea id="message" required placeholder="How can we help?"></textarea>
+        <button class="btn primary" type="submit">Send Enquiry</button>
+      </form>
+      <p style="color:#777;font-size:12px;margin-bottom:0">The form opens the business email app using the address configured below.</p>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><span>© <span id="year"></span> <span id="footerName">BLACKOUT5616</span>. All rights reserved.</span><span>Official website</span></div></footer>
+
+<script>
+/* =========================
+   BUSINESS CONFIG
+   Edit ONLY these values.
+   ========================= */
+const BUSINESS = {
+  name: "BLACKOUT5616",
+  tagline: "Your trusted local business. Discover our products, services and easy ways to connect with us.",
+  type: "Business / Store",
+  area: "ADD VERIFIED BUSINESS ADDRESS",
+  address: "ADD VERIFIED BUSINESS ADDRESS",
+  phone: "ADD VERIFIED PHONE NUMBER",
+  email: "ADD VERIFIED EMAIL",
+  instagram: "https://www.instagram.com/blackout5616/"
+};
+
+document.title = BUSINESS.name + " | Official Website";
+document.getElementById("brandName").textContent = BUSINESS.name;
+document.getElementById("heroName").textContent = BUSINESS.name;
+document.getElementById("footerName").textContent = BUSINESS.name;
+document.getElementById("tagline").textContent = BUSINESS.tagline;
+document.getElementById("businessType").textContent = BUSINESS.type;
+document.getElementById("businessArea").textContent = BUSINESS.area;
+document.getElementById("address").textContent = BUSINESS.address;
+document.getElementById("phoneLink").textContent = BUSINESS.phone;
+document.getElementById("phoneLink").href = BUSINESS.phone.startsWith("ADD") ? "#" : "tel:" + BUSINESS.phone.replace(/\s/g,"");
+document.getElementById("emailLink").textContent = BUSINESS.email;
+document.getElementById("emailLink").href = BUSINESS.email.startsWith("ADD") ? "#" : "mailto:" + BUSINESS.email;
+document.getElementById("instagramBtn").href = BUSINESS.instagram;
+document.getElementById("instagramText").href = BUSINESS.instagram;
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function sendEnquiry(e){
+  e.preventDefault();
+  if(BUSINESS.email.startsWith("ADD")){
+    alert("Please add the verified business email in the BUSINESS config first.");
+    return;
+  }
+  const body = `Name: ${name.value}\nContact: ${contactInput.value}\n\nMessage:\n${message.value}`;
+  location.href = "mailto:"+BUSINESS.email+"?subject="+encodeURIComponent("Website Enquiry - "+BUSINESS.name)+"&body="+encodeURIComponent(body);
+}
+</script>
+</body>
+</html>
